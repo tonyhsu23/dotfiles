@@ -1,0 +1,21 @@
+
+
+execute pathogen#infect()
+
+syntax enable
+set background=light
+colorscheme solarized
+
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
+imap jk <esc>
+imap kj <esc>
+
+nmap j gj
+nmap k gk
+
+set number
