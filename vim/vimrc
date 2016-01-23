@@ -1,5 +1,4 @@
-
-
+" Tony's vimrc 
 execute pathogen#infect()
 
 syntax enable
@@ -19,3 +18,4 @@ nmap j gj
 nmap k gk
 
 set number
+
