@@ -41,3 +41,5 @@ nmap k gk
 " Display line numbers beside buffer
 set number
 
+" Set default font size
+set guifont=Monaco:h16
