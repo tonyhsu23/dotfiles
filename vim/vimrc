@@ -15,6 +15,9 @@ call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
 " == Vundle ==
 
+" enable matchit.vim
+runtime macros/matchit.vim
+
 " == Theme Setting == 
 " Set Solarized light theme
 execute pathogen#infect()
@@ -22,12 +25,6 @@ execute pathogen#infect()
 syntax enable
 set background=light
 colorscheme solarized
-
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
 " == Theme Setting == 
 
 " Quick type letter j or k to escape
