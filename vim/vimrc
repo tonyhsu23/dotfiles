@@ -8,9 +8,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim' " CtrlP Fuzzy File Finder
-Plugin 'tpope/vim-rails' " Rails.vim
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-commentary'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock' " depends on kana/vim-textobj-user
+Plugin 'ngmy/vim-rubocop'
 
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
@@ -36,12 +40,18 @@ imap kj <esc>
 nmap j gj
 nmap k gk
 
+" Use tab for autocomplete
+inoremap <Tab> <C-P>
+
 " Set default font size
 set guifont=Monaco:h16
 
 set number
 set cursorline
 set cursorcolumn
-set tabstop=2
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 set laststatus=2
 set statusline=%f
+set smartindent
