@@ -15,6 +15,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock' " depends on kana/vim-textobj-user
 Plugin 'ngmy/vim-rubocop'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
