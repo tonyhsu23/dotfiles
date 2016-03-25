@@ -29,8 +29,8 @@ runtime macros/matchit.vim
 execute pathogen#infect()
 
 syntax enable
-"let g:solarized_termcolors=256 " For ubuntu to work
-"set t_Co=256 " For ubuntu to work
+" let g:solarized_termcolors=256 " For ubuntu to work
+" set t_Co=256 " For ubuntu to work
 set background=light
 colorscheme solarized
 " == Theme Setting == 
