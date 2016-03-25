@@ -44,9 +44,6 @@ nmap k gk
 " Use tab for autocomplete
 inoremap <Tab> <C-P>
 
-" Set default font size
-set guifont=Monaco:h16
-
 set number
 set cursorline
 set cursorcolumn
