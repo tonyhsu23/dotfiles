@@ -17,6 +17,7 @@ Plugin 'nelstrom/vim-textobj-rubyblock' " depends on kana/vim-textobj-user
 Plugin 'ngmy/vim-rubocop'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
+Plugin 'fatih/vim-go'
 
 " vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -53,6 +54,7 @@ nmap k gk
 " Use tab for autocomplete
 " inoremap <Tab> <C-P>
 
+set relativenumber
 set number
 set cursorline
 set cursorcolumn
