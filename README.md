@@ -15,3 +15,21 @@ files includes:
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
 - Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
+
+## For ubuntu to work...
+
+1. tmux
+
+  replace '#{pane_current_path}' with $PWD
+
+2. vim
+
+  Set the following lines to configure colors
+
+  - let g:solarized_termcolors=256
+  - set t_co=256
+  - set t_ut=
+
+3. zsh
+
+  set terminal as xterm-256color
