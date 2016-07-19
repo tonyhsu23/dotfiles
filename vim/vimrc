@@ -1,4 +1,4 @@
-" == Vundle == 
+" ========================= Vundle =========================
 set nocompatible " Required by vundle
 filetype off     " Required by vundle
 
@@ -13,7 +13,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock' " depends on kana/vim-textobj-user
+Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
@@ -27,21 +27,22 @@ Plugin 'honza/vim-snippets'
 
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
-" == Vundle ==
+" ========================= Vundle =========================
 
 " enable matchit.vim
 runtime macros/matchit.vim
 
-" == Theme Setting == 
+" ==================== Theme Setting ======================= 
 " Set Solarized light theme
 execute pathogen#infect()
 
 syntax enable
 " let g:solarized_termcolors=256 " For ubuntu to work
-" set t_Co=256 " For ubuntu to work
+" set t_Co=256                   " For ubuntu to work
+" set t_ut=                      " For ubuntu to work
 set background=light
 colorscheme solarized
-" == Theme Setting == 
+" ==================== Theme Setting ======================= 
 
 " Quick type letter j or k to escape
 imap jk <esc>
