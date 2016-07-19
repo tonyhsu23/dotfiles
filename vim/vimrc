@@ -18,6 +18,7 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'fatih/vim-go'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -28,9 +29,6 @@ Plugin 'honza/vim-snippets'
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
 " ========================= Vundle =========================
-
-" enable matchit.vim
-runtime macros/matchit.vim
 
 " ==================== Theme Setting ======================= 
 " Set Solarized light theme
@@ -44,6 +42,19 @@ set background=light
 colorscheme solarized
 " ==================== Theme Setting ======================= 
 
+" ================== Vim General Settings ==================
+let mapleader = "\<Space>"
+
+" enable matchit.vim
+runtime macros/matchit.vim
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
 " Quick type letter j or k to escape
 imap jk <esc>
 imap kj <esc>
@@ -51,9 +62,6 @@ imap kj <esc>
 " Move up and down by visible lines if current line is wrapped 
 nmap j gj
 nmap k gk
-
-" Use tab for autocomplete
-" inoremap <Tab> <C-P>
 
 set relativenumber
 set number
@@ -65,3 +73,4 @@ set softtabstop=2
 set laststatus=2
 set statusline=%f
 set smartindent
+" ================== Vim General Settings ==================
