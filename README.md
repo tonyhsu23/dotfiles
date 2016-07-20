@@ -16,6 +16,11 @@ files includes:
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
 - Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
 
+## tmux
+
+- Install [Plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
+- [tmux copy and paste on OS X](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+
 ## For ubuntu to work...
 
 1. tmux
