@@ -25,7 +25,7 @@ files includes:
 
 1. tmux
 
-  replace '#{pane_current_path}' with $PWD
+  tmux version should be higher than 2.0
 
 2. vim
 
