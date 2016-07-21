@@ -1,6 +1,16 @@
 " ================== Vim General Settings ==================
 let mapleader = "\<Space>"
+
+" settings for vim-tmux-runner
 let g:VtrUseVtrMaps = 1
+nnoremap <leader>pry :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'pry'}<cr>
+
+" rspec-vim and vim-tmux-runner combination 
+let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " enable matchit.vim
 runtime macros/matchit.vim
@@ -54,6 +64,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'fatih/vim-go'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-tmux-runner'
+Plugin 'thoughtbot/vim-rspec'
 
 " vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
