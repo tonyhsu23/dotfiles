@@ -1,49 +1,6 @@
-" ========================= Vundle =========================
-set nocompatible " Required by vundle
-filetype off     " Required by vundle
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-commentary'
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'ngmy/vim-rubocop'
-Plugin 'tpope/vim-surround'
-Plugin 'mattn/emmet-vim'
-Plugin 'fatih/vim-go'
-Plugin 'christoomey/vim-tmux-navigator'
-
-" vim-snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-
-call vundle#end()         " Required by vundle
-filetype plugin indent on " Required by vundle
-" ========================= Vundle =========================
-
-" ==================== Theme Setting ======================= 
-" Set Solarized light theme
-execute pathogen#infect()
-
-syntax enable
-" let g:solarized_termcolors=256 " For ubuntu to work
-" set t_Co=256                   " For ubuntu to work
-" set t_ut=                      " For ubuntu to work
-set background=light
-colorscheme solarized
-" ==================== Theme Setting ======================= 
-
 " ================== Vim General Settings ==================
 let mapleader = "\<Space>"
+let g:VtrUseVtrMaps = 1
 
 " enable matchit.vim
 runtime macros/matchit.vim
@@ -74,3 +31,48 @@ set laststatus=2
 set statusline=%f
 set smartindent
 " ================== Vim General Settings ==================
+
+" ========================= Vundle =========================
+set nocompatible " Required by vundle
+filetype off     " Required by vundle
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-commentary'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'tpope/vim-surround'
+Plugin 'mattn/emmet-vim'
+Plugin 'fatih/vim-go'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-runner'
+
+" vim-snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+call vundle#end()         " Required by vundle
+filetype plugin indent on " Required by vundle
+" ========================= Vundle =========================
+
+" ==================== Theme Setting ======================= 
+" Set Solarized light theme
+execute pathogen#infect()
+
+syntax enable
+" let g:solarized_termcolors=256 " For ubuntu to work
+" set t_Co=256                   " For ubuntu to work
+" set t_ut=                      " For ubuntu to work
+set background=light
+colorscheme solarized
+" ==================== Theme Setting ======================= 
