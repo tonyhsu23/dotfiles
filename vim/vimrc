@@ -3,7 +3,10 @@ let mapleader = "\<Space>"
 
 " settings for vim-tmux-runner
 let g:VtrUseVtrMaps = 1
+nnoremap <leader>cd :VtrSendCtrlD<cr>
+nnoremap <leader>onr :VtrOpenRunner {'orientation': 'v', 'percentage': 30, 'cmd': ''}<cr>
 nnoremap <leader>pry :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'pry'}<cr>
+nnoremap <leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'irb'}<cr>
 
 " rspec-vim and vim-tmux-runner combination 
 let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
