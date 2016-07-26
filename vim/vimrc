@@ -1,7 +1,7 @@
 " ================== Vim General Settings ==================
 let mapleader = "\<Space>"
 
-" settings for vim-tmux-runner
+" Settings for vim-tmux-runner
 let g:VtrUseVtrMaps = 1
 nnoremap <leader>cd :VtrSendCtrlD<cr>
 nnoremap <leader>onr :VtrOpenRunner {'orientation': 'v', 'percentage': 30, 'cmd': ''}<cr>
@@ -10,18 +10,32 @@ nnoremap <leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd'
 
 " rspec-vim and vim-tmux-runner combination 
 let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+map <leader>t :call RunCurrentSpecFile()<cr>
+map <leader>s :call RunNearestSpec()<cr>
+map <leader>l :call RunLastSpec()<cr>
+map <leader>a :call RunAllSpecs()<cr>
 
-" enable matchit.vim
+" Split edit your vimrc. Type space, v, r in sequence to trigger
+nmap <leader>vr :sp $MYVIMRC<cr>
+
+" Source (reload) your vimrc. Type space, s, o in sequence to trigger
+nmap <leader>so :source $MYVIMRC<cr>
+
+" Copy the entire buffer into the system register
+nmap <leader>co ggyG
+
+" Command aliases for typoed commands (accidentally holding shift too long)
+command! W w
+command! Q q
+command! E e
+
+" Enable matchit.vim
 runtime macros/matchit.vim
 
-" automatically rebalance windows on vim resize
+" Automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
-" zoom a vim pane, <C-w>= to re-balance
+" Zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
@@ -43,17 +57,18 @@ set softtabstop=2
 set laststatus=2
 set statusline=%f
 set smartindent
+set scrolloff=4  " Keep at least 4 lines below cursor
 " ================== Vim General Settings ==================
 
 " ========================= Vundle =========================
 set nocompatible " Required by vundle
 filetype off     " Required by vundle
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
+" Let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-rails'
