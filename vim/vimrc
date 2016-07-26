@@ -47,6 +47,11 @@ imap kj <esc>
 nmap j gj
 nmap k gk
 
+" Move to start or end of line
+" (whitespace excluded for beginning of line)
+nnoremap <leader>b ^
+nnoremap <leader>e $
+
 set relativenumber
 set number
 set cursorline
