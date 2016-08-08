@@ -60,7 +60,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set laststatus=2
-set statusline=%f%=%y 
+set statusline=%f%=%y
 set smartindent
 set scrolloff=4  " Keep at least 4 lines below cursor
 " ================== Vim General Settings ==================
