@@ -49,6 +49,12 @@ command! W w
 command! Q q
 command! E e
 
+" Map tab to autocomplete
+imap <Tab> <C-P>
+
+" map snipmate autocomplete
+imap <C-O> <Plug>snipMateNextOrTrigger
+
 " Quick type letter j or k to escape
 imap jk <esc>
 imap kj <esc>
