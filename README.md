@@ -8,13 +8,14 @@ files includes:
 
 ## zsh-theme
 
-- Symlink zsh file from your source path to ~/.oh-my-zsh/custom/filename.zsh-theme
+- Symlink zsh file from your source path to `~/.oh-my-zsh/custom/filename.zsh-theme`
 
 ## vimrc
 
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
 - Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
+  - Add [color scheme](https://github.com/tomislav/osx-terminal.app-colors-solarized) to terminal
 
 ## tmux
 
