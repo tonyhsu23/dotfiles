@@ -20,6 +20,7 @@ files includes:
 
 - Install [Plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
 - [tmux copy and paste on OS X](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+- make a bin directory at home path, and symlink `tat` file
 
 ## For ubuntu to work...
 
