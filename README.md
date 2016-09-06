@@ -20,7 +20,11 @@ files includes:
 
 - Install [Plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
 - [tmux copy and paste on OS X](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
-- make a bin directory at home path, and symlink `tat` file
+
+### tat
+  - make a bin directory at home path, and symlink `tat` file
+  - add `/bin` path to your login shell file
+     - e.g. `export PATH="$HOME/bin:$PATH"`, add to `.zshrc`
 
 ## For ubuntu to work...
 
