@@ -79,6 +79,9 @@ nmap <leader>so :source $MYVIMRC<cr>
 " Copy the entire buffer into the system register
 nmap <leader>co ggyG
 
+" Format while file
+nmap <leader>fm gg=G
+
 " Move to start or end of line
 " (whitespace excluded for beginning of line)
 nnoremap <leader>b ^
