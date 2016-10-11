@@ -35,6 +35,10 @@ files includes:
 
 2. vim
 
+  File Type Indentation Setting
+
+  - Put ftplugins in `~/.vim/after/ftplugin/`
+
   Set the following lines to configure colors
 
   - let g:solarized_termcolors=256
