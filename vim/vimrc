@@ -157,6 +157,10 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" Angular.js
+Plugin 'matthewsimo/angular-vim-snippets'
+Plugin 'burnettk/vim-angular'
+
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
 " ========================= Vundle =========================
