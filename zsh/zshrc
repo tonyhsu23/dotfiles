@@ -1,0 +1,18 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/Tony/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+ZSH_THEME="cjt"
+
+plugins=(git-prompt emoji rails)
+
+source $ZSH/oh-my-zsh.sh
+
+# Load custom executable functions
+for function in ~/code/dotfiles/zsh/functions/*; do
+  source $function
+done
+
+# Load tat file
+export PATH="$HOME/bin:$PATH"
