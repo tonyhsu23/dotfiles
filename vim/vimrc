@@ -86,6 +86,9 @@ nmap <leader>fm gg=G
 " (whitespace excluded for beginning of line)
 nnoremap <leader>b ^
 nnoremap <leader>e $
+
+" Map binding pry
+nnoremap <leader>bp obinding.pry<esc><cr>
 " ======================= Mappings =========================
 
 " =================== Plugin Mappings ======================
@@ -119,6 +122,7 @@ syntax enable
 " let g:solarized_termcolors=256 " For ubuntu to work
 " set t_Co=256                   " For ubuntu to work
 " set t_ut=                      " For ubuntu to work
+
 set background=light
 colorscheme solarized
 " ==================== Theme Setting =======================
@@ -156,10 +160,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-
-" Angular.js
-Plugin 'matthewsimo/angular-vim-snippets'
-Plugin 'burnettk/vim-angular'
 
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
