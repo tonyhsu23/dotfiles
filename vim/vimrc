@@ -82,10 +82,9 @@ nmap <leader>co ggyG
 " Format while file
 nmap <leader>fm gg=G
 
-" Move to start or end of line
-" (whitespace excluded for beginning of line)
-nnoremap <leader>b ^
-nnoremap <leader>e $
+" Move to beginning/end of non-whitespace character
+nnoremap <leader>bn _
+nnoremap <leader>en g_
 
 " Map binding pry
 nnoremap <leader>bp obinding.pry<esc><cr>
