@@ -21,6 +21,8 @@ files includes:
 
 - Install [Plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
 - [tmux copy and paste on OS X](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+- Install [tmux plugin manager](https://github.com/tmux-plugins/tpm)
+- Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
 ### tat
   - make a bin directory at home path, and symlink `tat` file
