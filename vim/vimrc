@@ -4,6 +4,8 @@ let mapleader = "\<Space>"
 " Enable matchit.vim
 runtime macros/matchit.vim
 
+autocmd BufNewFile,BufRead *.conf set filetype=conf
+
 " Line numbers
 set relativenumber
 set number
