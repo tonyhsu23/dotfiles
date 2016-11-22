@@ -2,13 +2,25 @@
 
 files includes:
 
-- vimrc
-- tmux.conf
-- zsh-theme
+- zsh
+  - zshrc
+  - zlogin
+  - zsh-theme (cjt.zsh)
+  - functions (g)
+- vim
+  - vimrc
+  - javascript.vim
+- tmux
+  - tmux.conf
+  - tat
+- git
+  - gitconfig
+- ack
+  - ackrc
 
 ## zsh-theme
 
-- Symlink zsh file from your source path to `~/.oh-my-zsh/custom/filename.zsh-theme`
+- Symlink zsh file from your source path to `~/.oh-my-zsh/custom/<filename>.zsh-theme`
 
 ## vimrc
 
@@ -16,6 +28,10 @@ files includes:
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
 - Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
   - Add [color scheme](https://github.com/tomislav/osx-terminal.app-colors-solarized) to terminal
+
+## javascript.vim
+
+- Symlink this file from your source path to `~/.vim/after/ftplugin/javascript.vim`
 
 ## tmux
 
