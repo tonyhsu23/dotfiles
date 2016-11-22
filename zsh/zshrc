@@ -16,3 +16,7 @@ done
 
 # Load tat file
 export PATH="$HOME/bin:$PATH"
+
+# Alias
+# Start mysql server
+alias mss="mysql.server start"
