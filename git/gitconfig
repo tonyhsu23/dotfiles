@@ -1,0 +1,17 @@
+[user]
+	name  = Tony Hsu
+	email = t153426789@gmail.com
+[alias]
+	sla      = log --oneline --decorate --graph --all
+	co       = checkout
+	b        = branch
+	cm       = commit
+	unstage  = reset
+	uncommit = reset --soft HEAD^
+        sall     = stash -u
+        spop     = stash pop
+        rb       = rebase
+[core]
+	editor = vim
+[branch]
+        autosetuprebase = always
