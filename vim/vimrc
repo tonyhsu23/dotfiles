@@ -4,6 +4,7 @@ let mapleader = "\<Space>"
 " Enable matchit.vim
 runtime macros/matchit.vim
 
+" Set config filetype
 autocmd BufNewFile,BufRead *.conf set filetype=conf
 
 " Line numbers
@@ -72,7 +73,13 @@ autocmd VimResized * :wincmd =
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
-" Split edit your vimrc. Type space, v, r in sequence to trigger
+" Split edit zshrc
+nmap <leader>zsh :sp ~/.zshrc<cr>
+
+" Split edit gitconfig
+nmap <leader>gcf :sp ~/.gitconfig<cr>
+
+" Split edit vimrc. Type space, v, r in sequence to trigger
 nmap <leader>vr :sp $MYVIMRC<cr>
 
 " Source (reload) your vimrc. Type space, s, o in sequence to trigger
