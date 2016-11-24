@@ -15,6 +15,8 @@ files includes:
   - tat
 - git
   - gitconfig
+- git_template
+  - hooks
 - ack
   - ackrc
 

@@ -11,7 +11,10 @@
         sall     = stash -u
         spop     = stash pop
         rb       = rebase
+	ctags    = !.git/hooks/ctags
 [core]
 	editor = vim
 [branch]
         autosetuprebase = always
+[init]
+	templatedir = ~/.git_template
