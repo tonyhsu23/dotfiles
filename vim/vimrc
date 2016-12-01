@@ -23,6 +23,9 @@ set smartindent
 
 " Keep at least 4 lines below cursor
 set scrolloff=4
+
+" Highlight search result
+set hlsearch
 " ================== Vim General Settings ==================
 
 " ================== Statusline Settings ===================
@@ -97,6 +100,9 @@ nnoremap <leader>en g_
 
 " Map binding pry
 nnoremap <leader>bp obinding.pry<esc><cr>
+
+" Clear search highlight
+map <leader>hl :noh<cr>
 " ======================= Mappings =========================
 
 " =================== Plugin Mappings ======================
