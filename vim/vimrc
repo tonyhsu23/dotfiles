@@ -101,6 +101,9 @@ nnoremap <leader>en g_
 " Map binding pry
 nnoremap <leader>bp obinding.pry<esc><cr>
 
+" Map console.log
+nnoremap <leader>cl oconsole.log();<left><left>
+
 " Clear search highlight
 map <leader>hl :noh<cr>
 " ======================= Mappings =========================
