@@ -23,9 +23,6 @@ set smartindent
 
 " Keep at least 4 lines below cursor
 set scrolloff=4
-
-" Highlight search result
-set hlsearch
 " ================== Vim General Settings ==================
 
 " ================== Statusline Settings ===================
@@ -91,8 +88,8 @@ nmap <leader>so :source $MYVIMRC<cr>
 " Copy the entire buffer into the system register
 nmap <leader>co ggyG
 
-" Format while file
-nmap <leader>fm gg=G
+" Format whole file
+map <leader>fm mmgg=G`m
 
 " Move to beginning/end of non-whitespace character
 nnoremap <leader>bn _
@@ -101,16 +98,34 @@ nnoremap <leader>en g_
 " Map binding pry
 nnoremap <leader>bp obinding.pry<esc><cr>
 
+" Map console.log
+nnoremap <leader>cl oconsole.log();<left><left>
+
+" ======================= Mappings =========================
+
+" ================= Search Configuration ===================
+" Highlight while searching
+set hlsearch
+
+" Case insensitive pattern matching
+set ignorecase
+
+" Overrides ignorecase if pattern contains upcase
+set smartcase
+
 " Clear search highlight
 map <leader>hl :noh<cr>
-" ======================= Mappings =========================
+
+" Search visual selected words
+vnoremap // y/<C-R>"<CR>
+" ================= Search Configuration ===================
 
 " ==================== netrw Settings ======================
 " Hide banner
 " Default window size(%)
 " User tree style
-let g:netrw_banner = 0
-let g:netrw_winsize = 20
+let g:netrw_banner    = 0
+let g:netrw_winsize   = 20
 let g:netrw_liststyle = 3
 
 " Open netrw on left side
