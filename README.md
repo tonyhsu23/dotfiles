@@ -6,8 +6,8 @@ files includes:
   - zshrc
   - zlogin
   - theme
-    - solarized
-    - tomorrow
+     - solarized
+     - tomorrow
   - functions (g)
 - vim
   - vimrc
@@ -22,24 +22,30 @@ files includes:
 - ack
   - ackrc
 
-## zsh-theme
+## zsh
+
+### zsh-theme
 
 - Symlink zsh file from your source path to `~/.oh-my-zsh/custom/<filename>.zsh-theme`
 
-## vimrc
+## vim
+
+### vimrc
 
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
 - Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
   - Add [color scheme](https://github.com/tomislav/osx-terminal.app-colors-solarized) to terminal
 
-## javascript.vim
+### javascript.vim
 
 - Symlink this file from your source path to `~/.vim/after/ftplugin/javascript.vim`
 
 ## tmux
 
-- Install [Plugin (tmux copy and paste on OS X)](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard), [reference](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+### plugin
+
+- Install [tmux copy and paste on OS X plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard), [reference](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
 - Install [tmux plugin manager](https://github.com/tmux-plugins/tpm)
 - Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
