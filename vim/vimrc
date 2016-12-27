@@ -164,8 +164,17 @@ syntax enable
 " set t_Co=256                   " For ubuntu to work
 " set t_ut=                      " For ubuntu to work
 
-set background=light
-colorscheme solarized
+" Solarized-light theme
+" set background=light
+" colorscheme solarized
+
+" Tomorrow-night theme
+" colorscheme tomorrow-night
+
+" Lucius dark low contrast theme
+set background=dark
+let g:lucius_contrast='low'
+colorscheme lucius
 " ==================== Theme Setting =======================
 
 " ========================= Vundle =========================
@@ -203,7 +212,10 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+" Colorscheme
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'vim-scripts/Lucius'
 
 call vundle#end()         " Required by vundle
 filetype plugin indent on " Required by vundle
