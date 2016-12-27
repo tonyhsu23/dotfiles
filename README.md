@@ -5,7 +5,9 @@ files includes:
 - zsh
   - zshrc
   - zlogin
-  - zsh-theme (cjt.zsh)
+  - theme
+    - solarized
+    - tomorrow
   - functions (g)
 - vim
   - vimrc
@@ -37,8 +39,7 @@ files includes:
 
 ## tmux
 
-- Install [Plugin](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
-- [tmux copy and paste on OS X](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
+- Install [Plugin (tmux copy and paste on OS X)](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard), [reference](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future)
 - Install [tmux plugin manager](https://github.com/tmux-plugins/tpm)
 - Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
