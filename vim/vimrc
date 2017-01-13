@@ -108,14 +108,9 @@ nnoremap <leader>cl oconsole.log();<left><left>
 " ======================= Mappings =========================
 
 " ================= Search Configuration ===================
-" Highlight while searching
-set hlsearch
-
-" Case insensitive pattern matching
-set ignorecase
-
-" Overrides ignorecase if pattern contains upcase
-set smartcase
+set hlsearch   " Highlight while searching
+set ignorecase " Case insensitive pattern matching
+set smartcase  " Overrides ignorecase if pattern contains upcase
 
 " Clear search highlight
 map <leader>hl :noh<cr>
