@@ -20,6 +20,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set smartindent
+set shiftround
 
 " Keep at least 4 lines below cursor
 set scrolloff=4
