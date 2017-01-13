@@ -23,6 +23,10 @@ set smartindent
 
 " Keep at least 4 lines below cursor
 set scrolloff=4
+
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
 " ================== Vim General Settings ==================
 
 " ================== Statusline Settings ===================
@@ -100,7 +104,6 @@ nnoremap <leader>bp obinding.pry<esc><cr>
 
 " Map console.log
 nnoremap <leader>cl oconsole.log();<left><left>
-
 " ======================= Mappings =========================
 
 " ================= Search Configuration ===================
@@ -121,12 +124,9 @@ vnoremap // y/<C-R>"<CR>
 " ================= Search Configuration ===================
 
 " ==================== netrw Settings ======================
-" Hide banner
-" Default window size(%)
-" User tree style
-let g:netrw_banner    = 0
-let g:netrw_winsize   = 20
-let g:netrw_liststyle = 3
+let g:netrw_banner    = 0   " Hide banner
+let g:netrw_winsize   = 20  " Default window size(%)
+let g:netrw_liststyle = 3   " User tree style
 
 " Open netrw on left side
 nnoremap <leader>lx :Lexplore .<cr>
