@@ -172,12 +172,12 @@ syntax enable
 " colorscheme solarized
 
 " Tomorrow-night theme
-" colorscheme tomorrow-night
+colorscheme tomorrow-night
 
 " Lucius dark low contrast theme
-set background=dark
-let g:lucius_contrast='low'
-colorscheme lucius
+" set background=dark
+" let g:lucius_contrast='low'
+" colorscheme lucius
 " ==================== Theme Setting =======================
 
 " ========================= Vundle =========================
