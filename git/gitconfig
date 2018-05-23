@@ -17,5 +17,7 @@
 	editor = vim
 [branch]
         autosetuprebase = always
+[pager]
+	branch = false
 [init]
 	templatedir = ~/.git_template
