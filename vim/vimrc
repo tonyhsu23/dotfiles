@@ -158,6 +158,11 @@ map <leader>l :call RunLastSpec()<cr>
 map <leader>a :call RunAllSpecs()<cr>
 " ================ Vim-tmux-runner Settings ================
 
+" ===================== CtrlP Settings =====================
+let g:ctrlp_max_files = 0 " no limit
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" ===================== CtrlP Settings =====================
+
 " ==================== Theme Setting =======================
 " Set Solarized light theme
 execute pathogen#infect()
