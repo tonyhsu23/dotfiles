@@ -139,6 +139,8 @@ nnoremap <leader>lx :Lexplore .<cr>
 " ==================== netrw Settings ======================
 
 " =================== Plugin Mappings ======================
+" Replace ack with the Silver Searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
 " Use ack without showing first result
 nnoremap <leader>ack :Ack!<Space>
 

@@ -34,8 +34,10 @@ files includes:
 
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 - Install [Pathogen](https://github.com/tpope/vim-pathogen)
-- Install [Solarized Theme](http://ethanschoonover.com/solarized/vim-colors-solarized)
+- Install [Solarized Theme](https://ethanschoonover.com/solarized/)
   - Add [color scheme](https://github.com/tomislav/osx-terminal.app-colors-solarized) to terminal
+- Install [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
+- Add [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal)
 
 ### javascript.vim
 
