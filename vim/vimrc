@@ -31,6 +31,9 @@ set splitright
 
 " Mark 80 characters
 set colorcolumn=81
+
+" Default was 4000(4s)
+set updatetime=100
 " ================== Vim General Settings ==================
 
 " ================== Statusline Settings ===================
